@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nosotros — Sabia Madre Tierra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="/imagenes/logo1.jpeg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Inicio Sabia Madre Tierra">
+        <span class="brand-emblem" aria-hidden="true">
+          <img src="imagenes/logo1.jpeg" alt="" class="brand-logo-img" width="56" height="56" decoding="async" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Sabia Madre Tierra</span>
+          <span class="brand-tag">REVISTA JUVENIL · CONCIENCIA · ACCIÓN</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="index.html#agua">AGUA</a></li>
+          <li><a href="index.html#tierra">TIERRA</a></li>
+          <li><a href="index.html#aire">AIRE</a></li>
+          <li><a href="index.html#clima">CLIMA</a></li>
+          <li><a href="index.html#audiovisuales">AUDIOVISUALES</a></li>
+          <li><a href="sobre-nosotros.html" class="is-active" aria-current="page">SOBRE NOSOTROS</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn search-btn" aria-label="Buscar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="M20 20l-4-4"/>
+          </svg>
+        </button>
+        <a href="index.html#comunidad" class="btn btn-primary btn-pill">ÚNETE</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-about">
+    <section class="about" id="sobre-nosotros" aria-labelledby="about-heading">
+      <div class="about-inner">
+        <figure class="about-media">
+          <img
+            src="imagenes/hero.png"
+            alt="Paisaje y cultura de Túcume, conexión con la Madre Tierra"
+            width="520"
+            height="640"
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+        <div class="about-content">
+          <h1 id="about-heading" class="about-title">Sobre Nosotros</h1>
+          <div class="about-body">
+            <p>
+              Sabia Madre Tierra es un proyecto digital que busca reconectar a las nuevas generaciones con la naturaleza, la cultura ancestral y los conocimientos tradicionales que aún permanecen vivos en Túcume. A través de entrevistas, crónicas, contenido audiovisual y experiencias culturales, difundimos la importancia de vivir en armonía con la Madre Tierra y valorar nuestras raíces.
+            </p>
+            <p>
+              Nuestro objetivo es crear un espacio dinámico, educativo y visualmente atractivo donde los jóvenes puedan aprender sobre naturaleza, el cuidado e importancia de los elementos naturales y saberes ancestrales desde una mirada moderna y consciente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <blockquote class="footer-quote">
+        <span class="quote-bubble">“No heredamos la tierra de nuestros padres, la tomamos prestada de nuestros hijos.”</span>
+      </blockquote>
+      <div class="footer-center">
+        <div class="footer-brand">
+          <span class="brand-emblem brand-emblem--sm" aria-hidden="true">
+            <img src="imagenes/logo.png" alt="" class="brand-logo-img brand-logo-img--sm" width="44" height="44" decoding="async" />
+          </span>
+          <span class="footer-brand-name">Sabia Madre Tierra</span>
+        </div>
+        <nav class="footer-nav" aria-label="Pie de página">
+          <ul>
+            <li><a href="sobre-nosotros.html" aria-current="page">Sobre nosotros</a></li>
+            <li><a href="#">Equipo editorial</a></li>
+            <li><a href="#">Colabora</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2024 Sabia Madre Tierra. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

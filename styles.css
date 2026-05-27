@@ -685,6 +685,16 @@ a {
   cursor: not-allowed;
 }
 
+/* Página Sobre nosotros */
+.page-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-height: calc(100vh - 88px - 220px);
+  padding-top: 0.5rem;
+}
+
 /* Sobre nosotros */
 .about {
   padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 4vw, 1.5rem) clamp(2.5rem, 6vw, 4rem);
