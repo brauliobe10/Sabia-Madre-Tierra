@@ -22,17 +22,6 @@
           <span class="brand-tag">REVISTA JUVENIL · CONCIENCIA · ACCIÓN</span>
         </span>
       </a>
-      <nav class="main-nav" aria-label="Principal">
-        <ul>
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="agua.html" class="is-active" aria-current="page">AGUA</a></li>
-          <li><a href="tierra.html">TIERRA</a></li>
-          <li><a href="aire.html">AIRE</a></li>
-          <li><a href="clima.html">CLIMA</a></li>
-          <li><a href="index.html#audiovisuales">AUDIOVISUALES</a></li>
-          <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
-        </ul>
-      </nav>
       <div class="header-actions">
         <button type="button" class="icon-btn search-btn" aria-label="Buscar">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -40,9 +29,29 @@
             <path d="M20 20l-4-4"/>
           </svg>
         </button>
-        <a href="index.html#comunidad" class="btn btn-primary btn-pill">ÚNETE</a>
+        <a href="index.html#comunidad" class="btn btn-primary btn-pill header-cta">ÚNETE</a>
       </div>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
     </div>
+    <nav class="main-nav" id="site-nav" aria-label="Principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="agua.html" class="is-active" aria-current="page">Agua</a></li>
+        <li><a href="tierra.html">Tierra</a></li>
+        <li><a href="aire.html">Aire</a></li>
+        <li><a href="clima.html">Clima</a></li>
+        <li><a href="index.html#audiovisuales">Audiovisuales</a></li>
+        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li class="nav-item-cta"><a href="index.html#comunidad" class="nav-cta">Únete</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="nav-backdrop" data-nav-close hidden aria-label="Cerrar menú"></button>
   </header>
 
   <main class="page-chronicles">
