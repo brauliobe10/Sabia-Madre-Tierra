@@ -167,4 +167,41 @@
       }
     });
   }
+
+  // Funcionalidad de arrastrar y deslizar para el carrusel de la revista
+const carousel = document.querySelector('.cronica-carousel');
+
+if (carousel) {
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  carousel.addEventListener('mousedown', (e) => {
+    isDown = true;
+    carousel.classList.add('active');
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+    // Desactiva temporalmente el comportamiento "smooth" para un arrastre directo
+    carousel.style.scrollBehavior = 'auto';
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    isDown = false;
+  });
+
+  carousel.addEventListener('mouseup', () => {
+    isDown = false;
+    // Reactiva el comportamiento suave para que se acomode solo en la foto actual
+    carousel.style.scrollBehavior = 'smooth';
+  });
+
+  carousel.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 1.5; // Multiplicador de velocidad de arrastre
+    carousel.scrollLeft = scrollLeft - walk;
+  });
+}
+
 })();
