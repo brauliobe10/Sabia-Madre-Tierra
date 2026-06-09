@@ -1025,19 +1025,17 @@ body.nav-open .nav-backdrop {
 .cronica-figure {
   margin: 0.5rem 0 0 0.85rem;
   width: min(100%, 350px);
-  aspect-ratio: 4 / 5;
-  border-radius: 50%;
+  aspect-ratio: 1/ 1;
+  border-radius: 60% 40% 70% 30% / 40% 60% 30% 70%;
   overflow: hidden;
-  transform: rotate(-9deg);
-  box-shadow:
-    10px 16px 36px rgba(45, 62, 36, 0.2),
-    0 0 0 3px rgba(245, 242, 232, 0.95),
-    0 0 0 5px rgba(168, 184, 154, 0.35);
-  transition: transform 0.35s ease;
+  transform: none;
+  box-shadow: 15px 20px 40px rgba(45, 62, 36, 0.15);
+  transition: border-radius 0.5s ease, box-shadow 0.35s ease;
 }
 
 .cronica-figure:hover {
-  transform: rotate(-6deg) scale(1.02);
+  border-radius: 40% 60% 30% 70% / 60% 40% 70% 30%;
+  box-shadow: 10px 15px 30px rgba(45, 62, 36, 0.2);
 }
 
 .cronica-figure img {
@@ -1295,6 +1293,12 @@ body.nav-open .nav-backdrop {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
     line-height: 1.4;
+    
+    /* ==========================================================================
+      CAMBIOS PARA LEER EL TEXTO EN BLANCO
+      ========================================================================== */
+    color: #ffffff !important; /* Fuerza el color blanco puro */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Añade un sutil borde negro para que resalte */
   }
   
   .cronica-carousel-nav {
