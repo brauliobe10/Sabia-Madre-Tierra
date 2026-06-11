@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ver video — Sabia Madre Tierra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="/imagenes/logo1.jpeg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Inicio Sabia Madre Tierra">
+        <span class="brand-emblem" aria-hidden="true">
+          <img src="imagenes/logo1.jpeg" alt="" class="brand-logo-img" width="56" height="56" decoding="async" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Sabia Madre Tierra</span>
+          <span class="brand-tag">REVISTA JUVENIL · CONCIENCIA · ACCIÓN</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <button type="button" class="icon-btn search-btn" aria-label="Buscar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="M20 20l-4-4"/>
+          </svg>
+        </button>
+        <a href="index.html#comunidad" class="btn btn-primary btn-pill header-cta">ÚNETE</a>
+      </div>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+    </div>
+    <nav class="main-nav" id="site-nav" aria-label="Principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="agua.html">Agua</a></li>
+        <li><a href="tierra.html">Tierra</a></li>
+        <li><a href="aire.html">Aire</a></li>
+        <li><a href="clima.html">Clima</a></li>
+        <li><a href="index.html#audiovisuales" class="is-active" aria-current="page">Audiovisuales</a></li>
+        <li><a href="sobre-nosotros.html">Somos conciencia</a></li>
+        <li class="nav-item-cta"><a href="index.html#comunidad" class="nav-cta">Únete</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="nav-backdrop" data-nav-close hidden aria-label="Cerrar menú"></button>
+  </header>
+
+  <main class="page-video">
+    <div class="video-page-inner">
+      <a href="index.html#audiovisuales" class="video-back link-arrow">← Volver a audiovisuales</a>
+      <h1 class="video-page-title">Sabia Madre Tierra</h1>
+      <p class="video-page-desc">Contenido audiovisual del proyecto.</p>
+      <div class="video-player-wrap">
+        <video
+          class="video-player"
+          controls
+          playsinline
+          preload="metadata"
+          poster="imagenes/cronica-lia.jpg"
+        >
+          <source src="imagenes/video2.MOV" type="video/quicktime" />
+          <source src="imagenes/video2.MOV" type="video/mp4" />
+          Tu navegador no puede reproducir este video. <a href="imagenes/IMG_5253.MOV">Descargar el archivo</a>.
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <blockquote class="footer-quote">
+        <span class="quote-bubble">“No heredamos la tierra de nuestros padres, la tomamos prestada de nuestros hijos.”</span>
+      </blockquote>
+      <div class="footer-center">
+        <div class="footer-brand">
+          <span class="brand-emblem brand-emblem--sm" aria-hidden="true">
+            <img src="imagenes/logo.png" alt="" class="brand-logo-img brand-logo-img--sm" width="44" height="44" decoding="async" />
+          </span>
+          <span class="footer-brand-name">Sabia Madre Tierra</span>
+        </div>
+        <nav class="footer-nav" aria-label="Pie de página">
+          <ul>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="#">Equipo editorial</a></li>
+            <li><a href="#">Colabora</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">©AndreaLeyton 2026 Sabia Madre Tierra. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

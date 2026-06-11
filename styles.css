@@ -1025,7 +1025,7 @@ body.nav-open .nav-backdrop {
 .cronica-figure {
   margin: 0.5rem 0 0 0.85rem;
   width: min(100%, 350px);
-  aspect-ratio: 1/ 1;
+  aspect-ratio: 4/ 4;
   border-radius: 60% 40% 70% 30% / 40% 60% 30% 70%;
   overflow: hidden;
   transform: none;
