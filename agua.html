@@ -54,29 +54,138 @@
     <button type="button" class="nav-backdrop" data-nav-close hidden aria-label="Cerrar menú"></button>
   </header>
 
-  <main class="page-chronicles">
-    <header class="chronicles-hero chronicles-hero--agua">
-      <div class="chronicles-hero-icon card-icon-wrap watercolor-blue" aria-hidden="true">
-        <span class="card-icon">
-          <svg viewBox="0 0 48 64" width="40" height="52"><path d="M24 4C14 24 6 36 6 44c0 10 8 18 18 18s18-8 18-18c0-8-8-20-18-40z" fill="#7EB8D4" opacity=".85"/></svg>
-        </span>
-      </div>
-      <h1 class="chronicles-title">Agua</h1>
-      <p class="chronicles-intro">Cuidamos el ciclo vital que une ríos, océanos y vida en cada gota.</p>
-    </header>
+  <main class="page-article page-article--agua">
+    <article class="cronica-article">
+      <header class="cronica-header">
+        <p class="cronica-kicker">Crónica</p>
+        <h1 class="cronica-title">El agua de todos, <em>el riesgo de nadie</em></h1>
+        <p class="cronica-byline">Por: Redacción Sabia Madre Tierra</p>
+        <div class="cronica-ornament" aria-hidden="true">
+          <span class="cronica-ornament-line"></span>
+          <span class="cronica-ornament-diamond"></span>
+          <span class="cronica-ornament-line"></span>
+        </div>
+      </header>
 
-    <section class="chronicles-list" aria-labelledby="chronicles-heading">
-      <h2 id="chronicles-heading" class="visually-hidden">Crónicas sobre agua</h2>
-      <!-- Añade cada crónica dentro de <ul class="chronicles-grid"> -->
-      <ul class="chronicles-grid"></ul>
-      <p class="chronicles-empty">Próximamente publicaremos crónicas sobre el agua, los ríos y el cuidado de este elemento vital.</p>
-    </section>
+      <div class="cronica-intro-grid">
+        <aside class="cronica-aside cronica-aside--left">
+          <figure class="cronica-figure">
+            <img
+              src="imagenes/aire.png"
+              alt="Agricultor regando su parcela a orillas del canal controlado Taymi bajo el sol de Túcume"
+              width="350"
+              height="500"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+          <blockquote class="cronica-pull-quote">
+            <span class="cronica-quote-mark" aria-hidden="true">“</span>
+            <p>El verdadero peligro no viene de este cauce tranquilo, sino de un río que la mayor parte del año ni siquiera se nota.</p>
+            <cite>— Memoria del Valle</cite>
+          </blockquote>
+          <div class="cronica-botanical-deco" aria-hidden="true">
+            <!-- Icono decorativo adaptado sutilmente al flujo hídrico -->
+            <svg viewBox="0 0 120 200" width="100" height="160" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.35">
+              <path d="M60 180 C40 140 20 100 35 60 C45 35 60 20 60 8"/>
+              <path d="M60 120 C75 100 95 75 88 50"/>
+              <path d="M60 100 C42 85 28 65 32 45"/>
+              <circle cx="52" cy="128" r="6"/>
+            </svg>
+          </div>
+        </aside>
+
+        <div class="cronica-main-col">
+          <p>Son las cinco de la tarde y el sol golpea de costado sobre el cauce, el agua del canal Taymi avanza despacio, casi sin hacer ruido, arrastrando hojas secas y reflejos dorados. A orillas del canal, un agricultor riega su parcela con la misma calma de siempre, sin levantar la vista; para él, el agua es parte del paisaje, algo que siempre estuvo ahí y que probablemente siempre estará. Lo que no saben, lo que muy pocos en Túcume parecen tener presente, es que el verdadero peligro no viene de este cauce tranquilo, sino de otro río, uno que la mayor parte del año ni siquiera se nota: el río La Leche.</p>
+          <div class="cronica-ornament cronica-ornament--inline" aria-hidden="true">
+            <span class="cronica-ornament-line"></span>
+            <span class="cronica-ornament-diamond"></span>
+            <span class="cronica-ornament-line"></span>
+          </div>
+          <p>Hace generaciones, el agua en esta zona fue el centro de la vida. Las culturas prehispánicas de la costa norte construyeron sistemas de irrigación tan precisos que todavía sorprenden a los investigadores, canales que distribuían el caudal según el relieve, calendarios agrícolas que dependían de su manejo, comunidades organizadas alrededor de un recurso que entendían como propio y de todos a la vez. Ese conocimiento, esa relación de respeto con el agua y sus comportamientos, es lo que tenemos y ya casi no valoramos.</p>
+        </div>
+
+        <aside class="cronica-aside cronica-aside--right" id="botiquin">
+          <div class="cronica-aside-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 4 C10 12 6 16 6 22 A 10 10 0 0 0 26 22 C 26 16 22 12 16 4 Z"/>
+            </svg>
+          </div>
+          <h2 class="cronica-aside-title">La memoria olvidada del agua.</h2>
+          <p>Hoy la relación ancestral de armonía y respeto con las cuencas se ha roto.</p>
+          <p>El olvido tiene un nombre concreto: el río La Leche, un cauce natural de respuesta rápida y violenta.</p>
+          <p>En 1622, una de sus devastadoras inundaciones obligó a reubicar la ciudad original de Túcume.</p>
+          <a href="#riesgo-y-territorio" class="btn btn-earth btn-pill cronica-cta">
+            <span>Conoce el territorio</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 3C8 8 4 12 4 16c0 4 3.5 6 8 6s8-2 8-6c0-4-4-8-8-13z"/>
+            </svg>
+          </a>
+        </aside>
+      </div>
+
+      <div class="cronica-body">
+        <section class="cronica-section" id="riesgo-y-territorio" aria-labelledby="vivero-heading">
+          <h2 id="vivero-heading" class="cronica-section-title">El río La Leche y la fragilidad de la llanura</h2>
+          <p>Hoy esa relación se rompió, y el olvido tiene un nombre concreto, el río La Leche, nace en las alturas de Ferreñafe, cruza los distritos de Íllimo, Pacora, Jayanca, Mórrope y Túcume, y durante casi todo el año es apenas un hilo de agua, casi seco. Por eso nadie lo mira con cuidado. Pero a diferencia del Taymi, que es una obra de ingeniería controlada, el río La Leche es una cuenca natural de respuesta rápida y violenta, cuando llega el Fenómeno de El Niño o una tormenta como la del ciclón Yaku, su caudal puede dispararse hasta superar los 250 o 300 metros cúbicos por segundo.</p>
+          <p>Entonces rompe sus defensas en Íllimo o Pacora, y esas aguas avanzan sin control por la llanura hasta inundar caseríos y campos de cultivo en la zona rural de Túcume. No es la primera vez, en 1622 una inundación de este mismo río fue tan devastadora que obligó a reubicar la ciudad original de Túcume.</p>
+        </section>
+
+        <section class="cronica-section" aria-labelledby="cuidado-heading">
+          <h2 id="cuidado-heading" class="cronica-section-title">Planificación urbana frente a la geografía del desastre</h2>
+          <p>Entonces, cuidar un río no es solo no botar basura en él, es entender su historia, su comportamiento, los momentos en que puede cambiar de naturaleza, y ese cuidado deja de ser un asunto individual, se vuelve un tema de planificación urbana, de decisiones colectivas sobre dónde se construye y dónde no.</p>
+          <p>En Túcume, esas decisiones o la falta de ellas, tienen cifras concretas, Oscar Domínguez explica que el principal factor de riesgo es la topografía del distrito, que presenta depresiones donde el agua se acumula por gravedad, sin que exista un sistema de drenaje pluvial capaz de evacuarla. A esto se suma que la gente sigue construyendo sobre cuencas ciegas, quebradas y cauces de ríos y acequias, muchas veces sin saber lo que eso implica frente a un río como el La Leche.</p>
+        </section>
+
+        <section class="cronica-section" aria-labelledby="memoria-heading">
+          <h2 id="memoria-heading" class="cronica-quote-heading">“Entender un río es saber que un hilo de agua casi seco puede convertirse en horas en una amenaza”</h2>
+          <p>El resultado se mide en personas, aproximadamente 1200 habitantes vulnerables en la zona urbana, y más del 65% de la población rural expuesta, ya sea por dónde viven, con qué materiales construyen sus casas, o porque nadie les explicó que ese hilo de agua casi seco puede convertirse, en horas, en una amenaza.</p>
+        </section>
+
+        <section class="cronica-section" aria-labelledby="identidad-heading">
+          <h2 id="identidad-heading" class="cronica-section-title">El agua como conversación constante</h2>
+          <p>¿Qué más se puede hacer? La respuesta no es una sola obra, ni una autoridad que no construye el drenaje que el distrito necesita, es también el hecho de que las familias conozcan la historia y el comportamiento del río que tienen cerca, que se detenga la ocupación de zonas de cauce, y que el agua vuelva a ser un tema de conversación, no solo cuando el cielo se oscurece y empieza a llover.</p>
+          <p>Mientras tanto, esa tarde el canal sigue su curso tranquilo, y a lo lejos, el lecho seco del río La Leche espera, como lleva esperando durante siglos, a que alguien vuelva a mirarlo antes de que sea él quien decida hacerse notar.</p>
+        </section>
+
+        <section class="cronica-section" aria-labelledby="vivero-fotos-heading">
+          <h2 id="vivero-fotos-heading" class="cronica-section-title">Instantáneas de la memoria hídrica</h2>
+          
+          <!-- Carrusel de fotos integrado en la crónica -->
+          <div class="cronica-carousel-container">
+            <div class="cronica-carousel">
+              
+              <div class="cronica-carousel-item" id="slide-1">
+                <img src="/imagenes/aire.png" alt="Lecho casi seco del río La Leche cruzando el valle en época de estiaje" loading="lazy" />
+                <div class="cronica-carousel-caption">
+                  <p>El hilo de agua del río La Leche, un lecho silencioso que esconde una respuesta rápida y destructiva.</p>
+                </div>
+              </div>
+
+              <div class="cronica-carousel-item" id="slide-2">
+                <img src="/imagenes/agua-imagen.jpeg" alt="Campos agrícolas y caseríos rurales expuestos en las depresiones topográficas de Túcume" loading="lazy" />
+                <div class="cronica-carousel-caption">
+                  <p>Zonas rurales expuestas por la falta de drenaje integral y la ocupación de cuencas ciegas.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Navegación interna (Puntos indicadores) -->
+            <div class="cronica-carousel-nav">
+              <a href="#slide-1" aria-label="Ir a la foto 1"></a>
+              <a href="#slide-2" aria-label="Ir a la foto 2"></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <blockquote class="footer-quote">
-        <span class="quote-bubble">“No heredamos la tierra de nuestros padres, la tomamos prestada de nuestros hijos.”</span>
+        <span class="quote-bubble">“Cuidar un río no es solo no botar basura, es entender su historia y decisiones de dónde se construye.”</span>
       </blockquote>
       <div class="footer-center">
         <div class="footer-brand">
@@ -94,7 +203,7 @@
           </ul>
         </nav>
       </div>
-      <p class="footer-copy">©AndreaLeyton 2026 Sabia Madre Tierra. Todos los derechos reservados.</p>
+      <p class="footer-copy">© 2026 Sabia Madre Tierra. Todos los derechos reservados.</p>
     </div>
   </footer>
 
